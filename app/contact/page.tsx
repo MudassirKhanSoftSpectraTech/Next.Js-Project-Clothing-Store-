@@ -5,11 +5,16 @@ import { useState } from "react";
 
 export default function Contact() {
 
-  const [name,setName]=useState()
-  const [email,setEmail]=useState()
-  const [password,setPassword]=useState()
+  // const [name,setName]=useState()
+  // const [email,setEmail]=useState()
+  // const [password,setPassword]=useState()
 
-  const [error,setError] = useState(false)
+  // const [error,setError] = useState(false)
+
+    const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [error, setError] = useState<boolean>(false);
 
   const handler=(e: { preventDefault: () => void; })=>{
     e.preventDefault();
