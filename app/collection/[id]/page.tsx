@@ -60,8 +60,13 @@ import { products } from "../data/products";
 export default function ProductDetails({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: { id: string };
 }) {
+// export default function ProductDetails({
+//   params,
+// }: {
+//   params: Promise<{ id: string }>;
+// }) {
 
   
 
