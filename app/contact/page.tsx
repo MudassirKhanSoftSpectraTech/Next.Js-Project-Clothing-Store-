@@ -11,7 +11,7 @@ export default function Contact() {
 
   const [error,setError] = useState(false)
 
-  const handler=(e)=>{
+  const handler=(e: { preventDefault: () => void; })=>{
     e.preventDefault();
     if(!name  || !email || !password ||  password.length <= 6){
        setError(true)
